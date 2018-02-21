@@ -1,0 +1,29 @@
+body, html {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+html{
+	font-size: 16px;
+}
+
+body {
+	line-height: 1.42;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin-top: 0;
+	font-weight: normal;
+}
+
+section{
+	padding: rem(40px) 0;
+	height: 100vh;
+}
+
+.bg-pattern{
+	background: rgb(40,165,168) url('../img/pattern.png') repeat;
+}

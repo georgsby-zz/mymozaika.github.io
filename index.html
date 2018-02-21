@@ -1,0 +1,1253 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Конструктор Термомозаики</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|Roboto" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/css/main.css">
+
+    <script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
+</head>
+
+<body>
+    <section class="bg-pattern">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="app_box py-3 px-2">
+                        <div class="row">
+                            <div class="col-lg-2">
+                                <div class="btn_left mr-auto">
+                                    <form>
+                                        <div class="form-group">
+                                            <label class="ml-2" for="chooseColor">Выберите цвет</label>
+                                            <select class="form-control" id="chooseColor">
+                                                <option value="#FF0000">Красный</option>
+                                                <option value="#FFA500">Оранжевый</option>
+                                                <option value="#FFFF00">Желтый</option>
+                                                <option value="#008000">Зеленый</option>
+                                                <option value="#00FFFF">Голубой</option>
+                                                <option value="#0000FF">Синий</option>
+                                                <option value="#800080">Фиолетовый</option>
+                                            </select>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 ml-auto">
+                                <div class="btn_right text-right pt-2">
+                                    <button type="button" class="btn btn-violet" data-toggle="tooltip" data-placement="top" title="Для начала необходимо выбрать цвет мозаики. При первом клике на ячейку появляется мозаика, при повторном - удаляется!">
+                                        Инструкция
+                                    </button>
+                                    <a id="blank" href=""></a>
+                                    <button id="saveImg" class="btn btn-violet">Сохранить</button>
+                                    <button id="resetField" type="button" class="btn btn-violet">Очистить поле</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="socket-list ">
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                    <div class="socket-item">
+                                        <div class="socket-circle isColor"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
+        crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/jspdf@latest/dist/jspdf.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.js"></script>
+    <script src="static/js/common.js"></script>
+</body>
+
+</html>

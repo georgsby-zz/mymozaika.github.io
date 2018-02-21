@@ -1,0 +1,32 @@
+.form-control {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: $main-violet-hover;
+    background-color: #fff;
+    background-image: none;
+    background-clip: padding-box;
+    border: 1px solid $main-violet;
+    border-radius: 2rem;
+    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+.form-control:focus {
+    color: $main-violet-hover;;
+    background-color: #fff;
+    border-color: $main-violet;;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+option {
+    font-weight: normal;
+    border-radius: .25rem;
+    background: #f5f5f5;
+    display: block;
+    white-space: pre;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}

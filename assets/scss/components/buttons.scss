@@ -1,0 +1,11 @@
+.btn-violet {
+    color: #fff;
+    background-color: $main-violet;
+    border-color: $main-violet;
+    border-radius: 2rem;
+    cursor: pointer;
+    &:hover{
+        background-color: $main-violet-hover;
+        border-color: $main-violet-hover;
+    }
+}

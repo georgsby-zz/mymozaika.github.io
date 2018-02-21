@@ -1,0 +1,42 @@
+.app_box{
+    background: white;
+    border-top: 10px solid $main-violet;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.75);
+}
+label{
+    font-family: Roboto;
+    color: $main-violet-hover;
+}
+
+canvas{
+    max-height: 100%;
+    max-height: 100%;
+}
+
+.socket-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.socket-item{
+    width: rem(32px);
+    height: rem(32px);
+    background: #fff;
+    border: 1px solid $grey;
+    border-radius: rem(10px);
+    position: relative;
+    margin: rem(2px) rem(2px);
+}
+
+.socket-circle{
+    width: rem(22px);
+    height: rem(22px);
+    // border: 10px solid transperent;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(rem(-11px), rem(-11px))
+}
