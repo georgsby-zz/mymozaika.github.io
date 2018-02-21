@@ -65,7 +65,8 @@ option {
 .app_box {
   background: white;
   border-top: 10px solid #ab1acd;
-  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.75); }
+  box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.75);
+  border-radius: 1rem; }
 
 label {
   font-family: Roboto;
