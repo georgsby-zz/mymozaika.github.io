@@ -1,0 +1,21 @@
+.icon-bar {
+    background-color: $main-violet;
+    content: "";
+    display: block;
+    width: rem(25px);
+    height: rem(3px);
+}
+
+.navbar-light .navbar-toggler {
+    color: $main-violet;
+    border-color: $main-violet;
+}
+
+.navbar-toggler {
+    padding: .3rem .65rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}

@@ -47,14 +47,32 @@
                                 </div>
                             </div>
                             <div class="col-lg-6 ml-auto">
-                                <div class="btn_right text-right pt-2">
-                                    <button type="button" class="btn btn-violet" data-toggle="tooltip" data-placement="top" title="Для начала необходимо выбрать цвет мозаики. При первом клике на ячейку появляется мозаика, при повторном - удаляется!">
-                                        Инструкция
+                                <nav class="navbar navbar-expand-lg navbar-light">
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                        aria-expanded="false" aria-label="Toggle navigation">
+                                        <span class="icon-bar mb-1"></span>
+                                        <span class="icon-bar mb-1"></span>
+                                        <span class="icon-bar"></span>
                                     </button>
-                                    <a id="blank" href=""></a>
-                                    <button id="saveImg" class="btn btn-violet">Сохранить</button>
-                                    <button id="resetField" type="button" class="btn btn-violet">Очистить поле</button>
-                                </div>
+
+                                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item m-1">
+                                                <button id="tooltip" type="button" class="btn btn-violet" data-toggle="tooltip" data-placement="top" title="Для начала необходимо выбрать цвет мозаики. При первом клике на ячейку появляется мозаика, при повторном - удаляется!">
+                                                    Инструкция
+                                                </button>
+                                            </li>
+                                            <li class="nav-item m-1">
+                                                <a id="blank" href=""></a>
+                                                <button id="saveImg" class="btn btn-violet">Сохранить</button>
+                                            </li>
+                                            <li class="nav-item m-1">
+                                                <button id="resetField" type="button" class="btn btn-violet">Очистить поле</button>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </nav>
                             </div>
                         </div>
                         <div class="row">

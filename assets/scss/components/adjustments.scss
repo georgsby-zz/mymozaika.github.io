@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6{
 
 section{
 	padding: rem(40px) 0;
-	height: 100vh;
+	min-height: 100%;
 }
 
 .bg-pattern{

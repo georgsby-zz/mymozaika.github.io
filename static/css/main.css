@@ -17,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
   padding: 2.5rem 0;
-  height: 100vh; }
+  min-height: 100%; }
 
 .bg-pattern {
   background: #28a5a8 url("../img/pattern.png") repeat; }
@@ -62,6 +62,25 @@ option {
   min-height: 1.2em;
   padding: 0px 2px 1px; }
 
+.icon-bar {
+  background-color: #ab1acd;
+  content: "";
+  display: block;
+  width: 1.5625rem;
+  height: 0.1875rem; }
+
+.navbar-light .navbar-toggler {
+  color: #ab1acd;
+  border-color: #ab1acd; }
+
+.navbar-toggler {
+  padding: .3rem .65rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background: 0 0;
+  border: 1px solid transparent;
+  border-radius: .25rem; }
+
 .app_box {
   background: white;
   border-top: 10px solid #ab1acd;
@@ -72,10 +91,6 @@ label {
   font-family: Roboto;
   color: #8c1ba8; }
 
-canvas {
-  max-height: 100%;
-  max-height: 100%; }
-
 .socket-list {
   display: -ms-flexbox;
   display: flex;
@@ -83,12 +98,13 @@ canvas {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 100%; }
+  width: 100%;
+  background: white; }
 
 .socket-item {
   width: 2rem;
   height: 2rem;
-  background: #fff;
+  background: white;
   border: 1px solid #777;
   border-radius: 0.625rem;
   position: relative;
@@ -97,7 +113,7 @@ canvas {
 .socket-circle {
   width: 1.375rem;
   height: 1.375rem;
-  border-radius: 50%;
+  border-radius: 1.1rem;
   position: absolute;
   top: 50%;
   left: 50%;
