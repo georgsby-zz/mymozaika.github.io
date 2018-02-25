@@ -36,3 +36,32 @@ label{
     left: 50%;
     transform: translate(rem(-11px), rem(-11px))
 }
+
+footer{
+    background: #000000;
+    color: #dedede;
+}
+
+.owner_info{
+    color: #dedede;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Roboto;
+    &:hover{
+        text-decoration: none;
+        color: #dedede;
+    }
+}
+
+.owner_lastname{
+    color: #67bc5c;
+}
+
+.owner_website{
+    color: #dedede;
+    font-family: Roboto;
+    &:hover{
+        text-decoration: none;
+        color: #67bc5c;
+    }
+}
