@@ -44,13 +44,12 @@ footer{
 
 .owner_info{
     color: #dedede;
+}
+
+.owner_name, .owner_lastname{
     text-transform: uppercase;
     font-weight: 700;
     font-family: Roboto;
-    &:hover{
-        text-decoration: none;
-        color: #dedede;
-    }
 }
 
 .owner_lastname{

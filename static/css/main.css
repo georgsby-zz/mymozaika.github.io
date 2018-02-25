@@ -125,13 +125,12 @@ footer {
   color: #dedede; }
 
 .owner_info {
-  color: #dedede;
+  color: #dedede; }
+
+.owner_name, .owner_lastname {
   text-transform: uppercase;
   font-weight: 700;
   font-family: Roboto; }
-  .owner_info:hover {
-    text-decoration: none;
-    color: #dedede; }
 
 .owner_lastname {
   color: #67bc5c; }
